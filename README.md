@@ -16,7 +16,7 @@ Install matrix-inverse-js by running:
 Example
 -------
 
-    var matrixInverse = require('./matrix-inverse');
+    var matrixInverse = require('matrix-inverse');
 
     var M = [
         [3, 3.2],
