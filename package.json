@@ -22,5 +22,8 @@
     "chai": "~4.2.0",
     "chai-stats": "~0.3.0",
     "prettier": "^1.18.2"
-  }
+  },
+  "files": [
+    "matrix-inverse.js"
+  ]
 }
