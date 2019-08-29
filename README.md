@@ -6,9 +6,9 @@
 [![bundle size](https://img.shields.io/bundlephobia/minzip/matrix-inverse?style=flat-square)][bundlephobia]
 [![code style](https://img.shields.io/badge/code_style-prettier-ff69b4?style=flat-square)][prettier]
 
-[npm]: https://npmjs.com/anafanafo
-[build]: https://circleci.com/gh/metabolize/anafanafo/tree/master
-[bundlephobia]: https://bundlephobia.com/result?p=anafanafo
+[npm]: https://npmjs.com/matrix-inverse
+[build]: https://circleci.com/gh/metabolize/matrix-inverse/tree/master
+[bundlephobia]: https://bundlephobia.com/result?p=matrix-inverse
 [prettier]: https://prettier.io/
 
 Matrix inverse function. Code is from [sylvester][] by [James Coglan][], with
