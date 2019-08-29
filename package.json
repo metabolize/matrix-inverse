@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": "https://github.com/bodylabs/matrix-inverse-js",
   "devDependencies": {
-    "chai": "~1.10.0",
+    "chai": "~4.2.0",
     "chai-stats": "~0.3.0",
     "prettier": "^1.18.2"
   }
