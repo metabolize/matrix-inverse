@@ -19,7 +19,6 @@ jobs:
           name: Check lint
           command: npm run lint
           when: always
-
       # - run:
       #     name: Check prettier
       #     command: npm run prettier-check
