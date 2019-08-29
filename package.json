@@ -4,7 +4,8 @@
   "description": "Matrix inverse function (from sylvester)",
   "main": "matrix-inverse.js",
   "scripts": {
-    "test": "node test.js"
+    "test:js": "node test.js",
+    "test": "npm run test"
   },
   "keywords": [
     "matrix"
