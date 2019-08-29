@@ -1,5 +1,16 @@
 # matrix-inverse
 
+[![version](https://img.shields.io/npm/v/matrix-inverse?style=flat-square)][npm]
+[![license](https://img.shields.io/npm/l/matrix-inverse?style=flat-square)][npm]
+[![build](https://img.shields.io/circleci/project/github/metabolize/matrix-inverse?style=flat-square)][build]
+[![bundle size](https://img.shields.io/bundlephobia/minzip/matrix-inverse?style=flat-square)][bundlephobia]
+[![code style](https://img.shields.io/badge/code_style-prettier-ff69b4?style=flat-square)][prettier]
+
+[npm]: https://npmjs.com/anafanafo
+[build]: https://circleci.com/gh/metabolize/anafanafo/tree/master
+[bundlephobia]: https://bundlephobia.com/result?p=anafanafo
+[prettier]: https://prettier.io/
+
 Matrix inverse function. Code is from [sylvester][] by [James Coglan][], with
 gratitude.
 
