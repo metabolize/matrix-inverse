@@ -5,7 +5,9 @@
   "main": "matrix-inverse.js",
   "scripts": {
     "test:js": "node test.js",
-    "test": "npm run test"
+    "prettier": "prettier --write \"**/*.@(yml|json|js|md)\"",
+    "prettier:check": "prettier --check \"**/*.@(yml|json|js|md)\"",
+    "test": "npm run test && npm run prettier:check"
   },
   "keywords": [
     "matrix"
@@ -15,6 +17,7 @@
   "repository": "https://github.com/bodylabs/matrix-inverse-js",
   "devDependencies": {
     "chai": "~1.10.0",
-    "chai-stats": "~0.3.0"
+    "chai-stats": "~0.3.0",
+    "prettier": "^1.18.2"
   }
 }
