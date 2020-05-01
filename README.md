@@ -25,7 +25,10 @@ Install matrix-inverse by running:
 ```js
 const matrixInverse = require('matrix-inverse')
 
-const M = [[3, 3.2], [3.5, 3.6]]
+const M = [
+  [3, 3.2],
+  [3.5, 3.6],
+]
 
 const M_inv = matrixInverse(M)
 ```

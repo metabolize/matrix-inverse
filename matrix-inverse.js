@@ -1,13 +1,13 @@
 var Sylvester = {}
 
-Sylvester.Matrix = function() {}
+Sylvester.Matrix = function () {}
 
-Sylvester.Matrix.create = function(elements) {
+Sylvester.Matrix.create = function (elements) {
   var M = new Sylvester.Matrix()
   return M.setElements(elements)
 }
 
-Sylvester.Matrix.I = function(n) {
+Sylvester.Matrix.I = function (n) {
   var els = [],
     i = n,
     j
@@ -22,16 +22,16 @@ Sylvester.Matrix.I = function(n) {
 }
 
 Sylvester.Matrix.prototype = {
-  dup: function() {
+  dup: function () {
     return Sylvester.Matrix.create(this.elements)
   },
 
-  isSquare: function() {
+  isSquare: function () {
     var cols = this.elements.length === 0 ? 0 : this.elements[0].length
     return this.elements.length === cols
   },
 
-  toRightTriangular: function() {
+  toRightTriangular: function () {
     if (this.elements.length === 0) return Sylvester.Matrix.create([])
     var M = this.dup(),
       els
@@ -73,7 +73,7 @@ Sylvester.Matrix.prototype = {
     return M
   },
 
-  determinant: function() {
+  determinant: function () {
     if (this.elements.length === 0) {
       return 1
     }
@@ -89,11 +89,11 @@ Sylvester.Matrix.prototype = {
     return det
   },
 
-  isSingular: function() {
+  isSingular: function () {
     return this.isSquare() && this.determinant() === 0
   },
 
-  augment: function(matrix) {
+  augment: function (matrix) {
     if (this.elements.length === 0) {
       return this.dup()
     }
@@ -118,7 +118,7 @@ Sylvester.Matrix.prototype = {
     return T
   },
 
-  inverse: function() {
+  inverse: function () {
     if (this.elements.length === 0) {
       return null
     }
@@ -166,7 +166,7 @@ Sylvester.Matrix.prototype = {
     return Sylvester.Matrix.create(inverse_elements)
   },
 
-  setElements: function(els) {
+  setElements: function (els) {
     var i,
       j,
       elements = els.elements || els
@@ -191,6 +191,6 @@ Sylvester.Matrix.prototype = {
   },
 }
 
-module.exports = function(elements) {
+module.exports = function (elements) {
   return Sylvester.Matrix.create(elements).inverse().elements
 }
