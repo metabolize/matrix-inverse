@@ -8,11 +8,17 @@ var should = chai.should(),
 
 var matrixInverse = require('./matrix-inverse')
 
-var M = [[3, 3.2], [3.5, 3.6]]
+var M = [
+  [3, 3.2],
+  [3.5, 3.6],
+]
 
 var M_inv = matrixInverse(M)
 
-var expected = [[-9, 8], [8.75, -7.5]]
+var expected = [
+  [-9, 8],
+  [8.75, -7.5],
+]
 
 expect(M_inv[0][0]).to.almost.equal(expected[0][0])
 expect(M_inv[0][1]).to.almost.equal(expected[0][1])
