@@ -192,5 +192,10 @@ Sylvester.Matrix.prototype = {
 }
 
 module.exports = function (elements) {
-  return Sylvester.Matrix.create(elements).inverse().elements
+  const mat = Sylvester.Matrix.create(elements).inverse()
+  if (mat !== null) {
+    return mat.elements
+  } else {
+    return null
+  }
 }
