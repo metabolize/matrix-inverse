@@ -7,7 +7,7 @@
     "test:js": "node test.js",
     "prettier": "prettier --write \"**/*.@(yml|json|js|md)\"",
     "prettier:check": "prettier --check \"**/*.@(yml|json|js|md)\"",
-    "test": "npm run test && npm run prettier:check"
+    "test": "npm run test:js && npm run prettier:check"
   },
   "keywords": [
     "matrix",
