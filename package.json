@@ -1,6 +1,6 @@
 {
   "name": "matrix-inverse",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Matrix inverse (code from sylvester)",
   "main": "matrix-inverse.js",
   "scripts": {
