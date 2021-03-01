@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": "metabolize/matrix-inverse",
   "devDependencies": {
-    "chai": "~4.2.0",
+    "chai": "~4.3.0",
     "chai-stats": "~0.3.0",
     "prettier": "^2.0.5"
   },
